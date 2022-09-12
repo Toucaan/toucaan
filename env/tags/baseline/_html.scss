@@ -1,0 +1,15 @@
+/*	Always set a background color on the top `html` element. 
+	Some pre-installed browsers, like the one on an LG OLED C8 TV or higher, 
+	defaults to a black background which may not work for your content without a plan.  
+*/
+
+html {
+	background-color: var(--lightest-grey);
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden; /* Uncomment in case of "mobile app view" only if you need horizontal panning. Usually, further control using JavaScript might be required. */
+	overflow-y: scroll;
+	text-size-adjust: 100%;
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+}

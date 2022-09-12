@@ -1,0 +1,16 @@
+a {
+    color: var(--primary-anchor-color);
+    text-decoration: none;
+    text-rendering: optimizelegibility;
+    outline: 0;
+    &:visited,
+    &:hover,
+    &:active,
+    &:focus {
+      color: var(--violet);
+    }
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}

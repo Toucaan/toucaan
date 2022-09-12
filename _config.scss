@@ -1,0 +1,63 @@
+@charset "UTF-8";   /* Always set Charset. Recommended reading: https://www.w3.org/International/questions/qa-css-charset.en */
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap&text="RedGosithub"'); /* Use font-subsetting wherever it is possible */
+
+/* Portrait ⇋ landscape switch. */
+@import url('/toucaan/router/portrait.css') screen and (orientation: portrait);
+@import url('/toucaan/router/landscape.css') screen and (orientation: landscape);
+
+/* --vmin stands for base unit of intrinsic blockscoped typography. */
+@media only screen and (orientation: portrait) {
+	:root {
+		--vmin: calc(100vw/100);
+		/* Fallback if vmin is not supported. */
+	}
+}
+
+@media only screen and (orientation: landscape) {
+	:root {
+		--vmin: calc(100vh/100);
+		/* Fallback if vmin is not supported. */
+	}
+}
+
+/* Global variables below */
+:root {
+	--vmin: 1vmin;
+
+	/* Font families. */
+	--sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--system: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif !important;
+	--monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	--serif: -apple-system-ui-serif, ui-serif, "Apple Garamond", "Baskerville", "Times New Roman", "Droid Serif", "Times", "Source Serif Pro", serif;
+	
+	/* Set your custom font unto a variable over here, like so: */
+	
+	/* --custom-font: 'Eina01 Regular', sans-serif; */
+
+	/* The color palette: */
+	--primary-text-color: rgba(60, 74, 91, 0.99);
+	--primary-headings-color: rgba(60, 74, 91, 0.99);
+	
+	/* Set your own anchor colors below: */
+	--primary-anchor-color: rgba(25, 95, 255, 0.99);
+	--primary-anchor-hover-color: rgba(50, 190, 255, 0.99);
+	--primary-anchor-active-color: rgba(50, 155, 255, 0.99);
+
+	--white: rgba(255, 255, 255, 1);
+	--black: rgba(0, 0, 0, 0);
+
+	/* Implement your own color palette as per brand. */
+	/* Recommended reading → Building Your Color Palette by Adam Wathan. https://www.refactoringui.com/previews/building-your-color-palette 
+	
+	--lightest-grey:
+	--lighter-grey: 
+	--light-grey: 
+	--grey: 
+	--dark-grey:
+	--darker-grey:
+	--darkest-grey: 
+	
+	and so on…*/
+	
+}

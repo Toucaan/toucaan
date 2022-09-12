@@ -1,0 +1,42 @@
+body {
+  font-size: var(--base-font-size-for-body); /* This is set at root for each device type separately. */
+  // font-family: var(--system); /* Uncomment for backup display in case your custom font fails to load. */
+  font-family: var(--eina-one);
+  font-smooth: always;
+  font-weight: 300;
+  font-style: normal;
+  font-synthesis: none;
+  font-stretch: ultra-condensed;
+  font-variant: no-common-ligatures proportional-nums slashed-zero;
+  font-kerning: normal;
+  text-rendering: geometricPrecision; /* Why not: text-rendering: optimizeSpeed;?… in light of PWA. */
+  font-display: swap;
+  font-display: optional;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-osx-font-smoothing: antialiased;
+
+  line-height: 1.5; /* calc(1.5 * 4 * var(--fs)) === 1.5. Or you could space it out differently. */
+
+  /* Colors */
+  color: var(--dark-grey);
+  text-shadow: 1px 1px 1px var(--white);
+  background-color: var(--lightest-grey); /* Always set a color for the body and flip it in the dark mode */
+
+  /* Dimensions */
+  border: none;
+  min-height: 100vh;
+
+  /* Behavior */
+  overflow-y: hidden;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;  /* Mozilla */  
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  touch-action: auto;
+}

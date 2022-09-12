@@ -1,0 +1,95 @@
+@import '../../accessibility/notch';
+
+/* Read more at https://bubblin.io/blog/toucaan-introduction */
+
+@media (min-aspect-ratio: 1 / 2) {
+  :root {
+    --edge: 100vmin; /* The shorter side */
+    --fs: calc(2 * var(--edge) / 100);
+  }
+}
+
+@media (max-aspect-ratio: 1 / 2) {
+  :root {
+    --edge: 50vh; /* The shorter side, always. */
+    --fs: calc(2 * var(--edge) / 100);
+  }
+}
+
+@media (display-mode: fullscreen) {
+  :root {
+    border: 5px solid black;
+  }
+}
+
+:root {
+  /* Treat larger widths in portrait mode as landscape with more room for the scroll. */
+  --lean: calc(95 * var(--vmin)); /* 100vmin i.e portrait width or full height in landscape orientation. */
+  --safe: var(--lean);
+  --full: 100vmin;
+  --half: 100vmin;
+  // --one-half: calc(1 / 2 * 100vmin);
+  // --one-third: calc(1 / 3 * 100vmin);
+  // --two-third: calc(2 / 3 * 100vmin);
+  --one-half: var(--lean); /* Since the device is lean anyway. */
+  --one-third: var(--lean); /* …will be different in case of tablets. */
+  --two-third: var(--lean);
+  --header: 0;
+}
+
+/* Read more at https://bubblin.io/blog/toucaan-introduction */
+
+/* Set up a baseline environment. */
+@import '../../typography/typefaces';
+
+@import '../../typography/typography';
+
+@import '../../typography/typeset';
+
+@import '../../env/helpers/universal';
+
+@import '../../env/tags/baseline/html';
+
+@import '../../env/tags/baseline/body';
+
+@import '../../env/tags/baseline/anchor';
+
+/* 
+@import '../../env/tags/lists';
+
+@import '../../env/tags/pre';
+
+@import '../../env/tags/hr';
+
+@import '../../env/tags/blockquote';
+
+@import '../../env/tags/sup';
+
+and so on… */
+
+/* Environment helpers & utilities. */
+
+@import '../../env/helpers/pseudos';
+
+@import '../../env/helpers/group';
+
+@import '../../env/helpers/utilities';
+
+
+/***** App specific styles below. ******/
+
+@import '../../palette/colors';
+
+/* Samples:
+
+@import './components/header';
+
+@import './components/main';
+
+@import './components/footer';
+
+@import './components/hero';
+
+@import './forms/login';
+
+and so on… */
