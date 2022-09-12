@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>Intrinsic Design.</h1>
+    <h1>Intrinsic Design with Toucaan.</h1>
     <a href="https://toucaan.com" rel="follow">
         <img src="header.svg" width="800">
     </a>
