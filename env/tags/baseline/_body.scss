@@ -1,5 +1,5 @@
 body {
-  font-size: var(--base-font-size-for-body); /* This is set at root for each device type separately. */
+  font-size: var(--base-font-size); /* This is set at root for each device type separately. */
   // font-family: var(--system); /* Uncomment for backup display in case your custom font fails to load. */
   font-family: var(--eina-one);
   font-smooth: always;

@@ -4,8 +4,8 @@
 
 @media (min-aspect-ratio: 1 / 2) {
   :root {
-    --edge: 100vmin; /* The shorter side */
-    --fs: calc(2 * var(--edge) / 100);
+    --edge: 100vmin; /* Choose the shorter side. */
+    --fs: calc(2 * var(--edge) / 100); /* fs stands for font size. */
   }
 }
 
@@ -16,11 +16,12 @@
   }
 }
 
-@media (display-mode: fullscreen) {
-  :root {
-    border: 5px solid black;
-  }
-}
+// @media all and (display-mode: fullscreen) {
+//   :root {
+//          /* Display controls to exit fullscreen mode. */
+//          /* See documentation to learn more options. */
+//   }
+// }
 
 :root {
   /* Treat larger widths in portrait mode as landscape with more room for the scroll. */
@@ -31,15 +32,16 @@
   // --one-half: calc(1 / 2 * 100vmin);
   // --one-third: calc(1 / 3 * 100vmin);
   // --two-third: calc(2 / 3 * 100vmin);
-  --one-half: var(--lean); /* Since the device is lean anyway. */
+  --one-half: var(--lean); /* Since mobile devices are lean anyway. */
   --one-third: var(--lean); /* …will be different in case of tablets. */
   --two-third: var(--lean);
-  --header: 0;
+
+  --base-font-size-for-mobile: calc(4 * var(--fs)); 
+  --base-font-size: var(--base-font-size-for-mobile); /* This variable is declared for each device category separately. */
 }
 
 /* Read more at https://bubblin.io/blog/toucaan-introduction */
 
-/* Set up a baseline environment. */
 @import '../../typography/typefaces';
 
 @import '../../typography/typography';
@@ -48,6 +50,7 @@
 
 @import '../../env/helpers/universal';
 
+/* Set up a baseline environment. */
 @import '../../env/tags/baseline/html';
 
 @import '../../env/tags/baseline/body';
