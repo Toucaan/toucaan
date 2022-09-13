@@ -11,14 +11,15 @@
 ## Getting Started
 
 ##### Step-1
-The first step is to add this repository (submodule) at the root of your project, like so:
+The first step is to add this repository at the root of your project, like so:
 
 ```bash
-    $ cd your/project/root/
     $ git submodule add https://github.com/Toucaan/toucaan
 ```
 
-This one command will add the entire Toucaan framework to your project and you can start applying **principles of intrinsic design** to your app now:
+That's it!
+
+This one command above will add the Toucaan submodule to your project. Now you can start designing your app and go deep into each medium for intrinsic functionality. 
 
 ```bash
     $ git status
