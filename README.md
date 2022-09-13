@@ -1,8 +1,8 @@
-# Introduction
-Toucaan is a **stack-agnostic vanilla styling framework for mobile apps and the web**. 
 
 <div align="center">
-    <h1>Welcome to Intrinsic Design with</h1>
+    <h1>Introduction </h1>
+    <p>Toucaan is a <em>stack-agnostic vanilla styling framework for mobile apps and the web</em>.</p>
+    <h1>Welcome to Intrinsic Design with:</h1>
     <a href="https://toucaan.com" rel="follow">
         <img src="header.svg" width="800">
     </a>
