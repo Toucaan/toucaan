@@ -10,74 +10,31 @@
 
 ## Getting Started
 
-##### Step-1
+##### Set up
 The first step is to add this repository at the root of your project, like so:
 
 ```bash
     $ git submodule add https://github.com/Toucaan/toucaan
 ```
 
-That's it.
+The command above will add Toucaan to your project like a submodule. That's it. It is now ready for you to start working on implementing your app's designs with support for the intrinsic qualities of the medium.
 
-This one command above will add the Toucaan submodule to your project. Now you can start designing your app and go deep into each medium for intrinsic functionality. 
+##### Configuration
+A significant part of setting up CSS for the presentation layer is like setting environment variables on the client side correctly. Once you have added Toucaan to your project, the next step is to configure it. 
 
-```bash
-    $ git status
-    On branch master
-    Your branch is up-to-date with 'origin/master'.
+Specify your app's color palette, branding, other defaults etc.
 
-    Changes to be committed:
-    (use "git reset HEAD <file>..." to unstage)
-
-        new file:   .gitmodules
-        new file:   toucaan
-```
-
-> Notice the new `.gitmodules` file at the root. This file stores the mapping between your project’s URL and Toucaan. Commit it to your project.
+Head over to our [documentation site](https://toucaan.com/docs/configuration) to take up configuration and the next steps.
 
 
-##### Step-2
-Open the `desktop.scss` file at `toucaan/app/desktop/` on your favorite editor and scroll to the bottom. This is where you'll import all your application-specific or component-specific css.
-
-```css
-
-/***** App specific style below. ******/
-
-@import '../../palette/colors';
-
-/* Samples:
-
-@import './components/header';
-
-@import './components/main';
-
-@import './components/footer';
-
-@import './components/hero';
-
-@import './forms/login';
-
-and so on… ****/
-
-```
-
-Move on to `app/mobile/mobile.scss` next and so on… 
-
-Glance through the remaining subfolders and `.scss` files that were added to your project. These will contain all the styling code required for your app's frontends across smartwatches, mobile phones, tablets (inclduing foldables/bendables), electric vehicles, desktops, and smart TVs.
-
-> Tip: Start small with just desktop and mobile support initially. Take it further once you're comfortable and at pace for the remaining scope. 
-
-## Detailed Documentation
-Documentation for Toucaan is available over [here](https://toucaan.com).
-
-**_Remember, if Toucaan, then you-can-too!_** 🥳.
+> **_Remember, if Toucaan, then you-can-too!_** 🥳.
 
 ## Contribution, discussion, and PRs 
 
 - Please do not make any changes to this repo directly, and 
-- Do not submit any PRs on this repo directly.
+- Do not submit any PRs on this repo directly either.
 
-All your recommendations, fixes, or "research" on the topic of intrinsic design must be submitted to the following [repository](https://github.com/Toucaan/toucaan.research) instead.
+All your recommendations, fixes, contributions, or "research" on the topic of intrinsic design must be submitted to the following [repository](https://github.com/Toucaan/toucaan.research) instead. Support questions may be raised on [Stackoverflow](https://stackoverflow.com/questions/tagged/toucaan) with the appropriate tag `toucaan`.
 
 
 ## License
