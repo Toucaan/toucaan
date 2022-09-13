@@ -17,7 +17,7 @@ The first step is to add this repository at the root of your project, like so:
     $ git submodule add https://github.com/Toucaan/toucaan
 ```
 
-That's it!
+That's it.
 
 This one command above will add the Toucaan submodule to your project. Now you can start designing your app and go deep into each medium for intrinsic functionality. 
 
@@ -37,7 +37,7 @@ This one command above will add the Toucaan submodule to your project. Now you c
 
 
 ##### Step-2
-Open the `desktop.scss` file at `toucaan/app/desktop/` on your favorite editor and scroll to the bottom. Start writing your application css!
+Open the `desktop.scss` file at `toucaan/app/desktop/` on your favorite editor and scroll to the bottom. This is where you'll import all your application-specific or component-specific css.
 
 ```css
 
@@ -61,9 +61,11 @@ and so on… ****/
 
 ```
 
-Move on to `app/mobile/mobile.scss` next to design for the phone specifically. 
+Move on to `app/mobile/mobile.scss` next and so on… 
 
-Glance through the remaining subfolders and the `.scss` files that were added to your project. These will contain all the styling code for your apps across smartwatches, mobile phones, tablets (and foldables/bendables), electric vehicles, desktops, and smart TVs.
+Glance through the remaining subfolders and `.scss` files that were added to your project. These will contain all the styling code required for your app's frontends across smartwatches, mobile phones, tablets (inclduing foldables/bendables), electric vehicles, desktops, and smart TVs.
+
+> Tip: Start small with just desktop and mobile support initially. Take it further once you're comfortable and at pace for the remaining scope. 
 
 ## Detailed Documentation
 Documentation for Toucaan is available over [here](https://toucaan.com).
