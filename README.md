@@ -33,7 +33,7 @@ This one command above will add the Toucaan submodule to your project. Now you c
         new file:   toucaan
 ```
 
-> Notice the new `.gitmodules` file at the root. This is a git configuration file that stores the mapping between your project’s URL and Toucaan.
+> Notice the new `.gitmodules` file at the root. This file stores the mapping between your project’s URL and Toucaan. Commit it to your project.
 
 
 ##### Step-2
