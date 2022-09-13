@@ -91,8 +91,8 @@
             <div class="container">
                 <div class="textuary">
                     <h1>Toucaan</h1>
-                    <h2>An Intrinsic CSS Framework.</h2>
-                    <a href="" class="button">Read documentation</a>
+                    <h2>A vanilla CSS Framework.</h2>
+                    <a href="https://toucaan.com/docs" class="button">Read documentation</a>
 
                 </div>
             </div>
