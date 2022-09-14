@@ -9,8 +9,6 @@
 </div>
 
 ## Getting Started
-
-##### Set up
 Add Toucaan (the current repository) to your project:
 
 ```bash
@@ -27,10 +25,11 @@ Head to our [documentation site](https://toucaan.com/docs/configuration) to take
 
 > Please do not make any changes to this repo directly. 
 
-
-To submit PRs, other contributions, or to discuss "ideas on the topic of intrinsic design," go to the following [repository](https://github.com/Toucaan/toucaan.research) instead. 
+To submit PRs, other contributions, or to discuss "ideas on the topic of intrinsic design," head over to the [research repository](https://github.com/Toucaan/toucaan.research) instead. 
 
 For support-related questions, use [Stackoverflow](https://stackoverflow.com/questions/tagged/toucaan). 
+
+## Toco toco
 
 > **_Remember, if Toucaan, then you-can-too!_** 🥳.
 
