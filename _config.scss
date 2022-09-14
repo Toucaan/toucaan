@@ -33,22 +33,23 @@
 	
 	/* Set your custom font unto a variable over here, like so: */
 	
-	/* --custom-font: 'Eina01 Regular', sans-serif; */
+	/* --custom-font: 'Inter Regular', sans-serif; */
 
-	/* The color palette: */
+	/****** THE COLOR PALETTE *******/
 	--primary-text-color: rgba(60, 74, 91, 0.99);
 	--primary-headings-color: rgba(60, 74, 91, 0.99);
 	
-	/* Set your own anchor colors below: */
+	/* Set anchor color */
 	--primary-anchor-color: rgba(25, 95, 255, 0.99);
 	--primary-anchor-highlighted-color: rgba(50, 140, 255, 0.99);
 
-	--white: rgba(255, 255, 255, 1);
-	--black: rgba(0, 0, 0, 0);
 
-	/* Implement your own color palette as per brand. */
-	/* Recommended reading → Building Your Color Palette by Adam Wathan. https://www.refactoringui.com/previews/building-your-color-palette 
+	--white: rgba(255, 255, 255, 1);
+	--black: rgba(0, 0, 0, 0);	
 	
+	/* Implement color palette for your brand. { Check → /accessibility/_darkmode.scss as well. }. */
+	/* Recommended reading → Building Your Color Palette by Adam Wathan. https://www.refactoringui.com/previews/building-your-color-palette 	
+
 	--lightest-grey:
 	--lighter-grey: 
 	--light-grey: 

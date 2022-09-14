@@ -2,33 +2,28 @@
 	
 @media screen and (prefers-color-scheme: dark) {
   :root {
-  /* The Color Palette */
-    --text: rgb(208, 216, 227); /* Primary text color */
-    --hc: rgba(60, 74, 91, 1); /* Headings color */
-    --fc: rgba(60, 74, 91, 0.45); /* Faded color */
-    --bc: rgba(5, 45, 250, 0.85); /* Base blue color */
-    --red: #a61322; /* rgba(196, 28, 28, 0.9); /* #c41c1c; /*  */ /* Red Goose (rg) branding. */
-    --white: rgba(255, 255, 255, 1);
-    --lightest-grey: #f7fcff;
-    --light-grey: #ecf0f3;
-    --light-grey2: #cbced1;
-    --black: rgba(0, 0, 0, 1);
-    --translucent-black: rgba(0, 0, 0, 0.65);
-    --grey: rgba(150, 150, 150, 0.5);
-    --orange: #f9b305;
-    --green: rgba(10, 170, 85, 1);
-    --light-green: #9cc73a;
-    --limegreen: #e9f5ae;
-    --lemonblue: #aef1f5;
-    --light-red: rgba(200, 100, 0, 0.05);
-    --sunlight: rgba(250, 140, 30, 0.08);
-    --warmlight: #fbdcdc;
-    --blue: rgba(5, 45, 250, 0.55);
-    --violet: rgba(139, 117, 238, 1);
-    --rust: rgba(196, 28, 28, 0.8);
-    --gradient: linear-gradient(135deg, rgb(238 54 54) 0%, rgb(158 59 108) 100%);
+  /* The inverted color palette comes here. */
+  	/****** THE COLOR PALETTE *******/
+	--primary-text-color: rgba(160, 174, 251, 0.99);
+	--primary-headings-color: rgba(160, 174, 251, 0.99);;
+	
+	/* Set anchor color */
+	--primary-anchor-color: rgba(25, 95, 255, 0.99);
+	--primary-anchor-highlighted-color: rgba(50, 140, 255, 0.99);
 
-    --split-gradient: linear-gradient(15deg, #d33f34 50%, #a61322 50.1%);
-    --radial-red: radial-gradient(var(--red), rgba(196, 28, 28, 1));
-  }
+
+	--white: rgba(255, 255, 255, 1);
+	--black: rgba(0, 0, 0, 0);	
+  
+  /* Implement the color palette for your brand in darkmode here:
+	--lightest-grey:
+	--lighter-grey: 
+	--light-grey: 
+	--grey: 
+	--dark-grey:
+	--darker-grey:
+	--darkest-grey: 
+	
+	and so on…*/
+ }
 }

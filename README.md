@@ -11,33 +11,30 @@
 ## Getting Started
 
 ##### Set up
-The first step is to add this repository at the root of your project, like so:
+Add Toucaan (the current repository) to your project:
 
 ```bash
     $ git submodule add https://github.com/Toucaan/toucaan
 ```
 
-The command above will add Toucaan to your project like a submodule. That's it. It is now ready for you to start working on implementing your app's designs with support for the intrinsic qualities of the medium.
+The command above will add Toucaan like a `git submodule.` That's it. You are all set to start using Toucaan to design your app's multiple interfaces now. 🥳
 
-##### Configuration
-A significant part of setting up CSS for the presentation layer is like setting environment variables on the client side correctly. Once you have added Toucaan to your project, the next step is to configure it. 
-
-Specify your app's color palette, branding, other defaults etc.
-
-Head over to our [documentation site](https://toucaan.com/docs/configuration) to take up configuration and the next steps.
-
+## Documentation
+Head to our [documentation site](https://toucaan.com/docs/configuration) to take up configuration and set up further.
 
 > **_Remember, if Toucaan, then you-can-too!_** 🥳.
 
-## Contribution, discussion, and PRs 
+## Contributions
 
-- Please do not make any changes to this repo directly, and 
-- Do not submit any PRs on this repo directly either.
-
-All your recommendations, fixes, contributions, or "research" on the topic of intrinsic design must be submitted to the following [repository](https://github.com/Toucaan/toucaan.research) instead. Support questions may be raised on [Stackoverflow](https://stackoverflow.com/questions/tagged/toucaan) with the appropriate tag `toucaan`.
+> Please do not make any changes to this repo directly. 
 
 
-## License
+To submit PRs, other contributions, or to discuss "ideas on the topic of intrinsic design," go to the following [repository](https://github.com/Toucaan/toucaan.research) instead. 
+
+For support-related questions, use [Stackoverflow](https://stackoverflow.com/questions/tagged/toucaan). 
+
+
+## Licenses
 
 MIT Standard License
 
