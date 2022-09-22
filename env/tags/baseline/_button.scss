@@ -1,0 +1,19 @@
+$font-family: inherit;
+
+button {
+	font-family: $font-family;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+	text-transform: none;
+	-webkit-appearance: button;
+}
+[type='button'] {
+	-webkit-appearance: button;
+}
+[type='reset'] {
+	-webkit-appearance: button;
+}
+[type='submit'] {
+	-webkit-appearance: button;
+}

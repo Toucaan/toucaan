@@ -1,17 +1,31 @@
 ::-moz-selection {
-  background: var(--rust);
-  color: #fff;
+  background: var(--lightmode-background-selection-color);
+  color: var(--lightmode-text-selection-color);
   text-shadow: none !important;
 }
 
 ::selection {
-  background: var(--rust);
-  color: #fff;
+  background: var(--lightmode-background-selection-color);
+  color: var(--lightmode-text-selection-color);
   text-shadow: none !important;
   &:window-inactive {
-    background: #eaeaea;
-    color: #000;
+    background: var(--lightmode-background-selection-window-inactive-color);
+    color: var(--lightmode-text-selection-window-inactive-color);
   }
+}
+
+/* Quirky forms @Mozilla Firefox */
+::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+	box-shadow: none;
 }
 
 ::-webkit-input-placeholder,
@@ -20,7 +34,7 @@
 :-ms-input-placeholder,
 ::placeholder,
 input::placeholder {
-  font-family: var(--eina-one);
+  font-family: var(--system); /* Or use custom fonts. */
   font-size: inherit; /* Best to inherit the values from the containing parent. */
   line-height: calc(1.5 * 4 * var(--fs));
   height: calc(1.5 * 3.5 * var(--fs));
@@ -36,8 +50,29 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  // -webkit-text-fill-color: var(--green);
+  // -webkit-text-fill-color: var(--green); /* Set color only if necessary */
   box-shadow: 0 0 1000px var(--limegreen) inset;
   -webkit-box-shadow: 0 0 1000px var(--limegreen) inset;
   transition: background-color 5000s ease-in-out 0s;
 }
+
+/* Quirky webkit */
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+	height: auto;
+}
+
+[type='search'] {
+	-webkit-appearance: textfield; 
+	outline-offset: -2px; 
+}
+
+::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+}
+

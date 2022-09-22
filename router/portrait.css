@@ -12,7 +12,7 @@
 /*** UNDERSTANDING THE SCOPE OF INTRINSIC DESIGN. ***/  
 
 /* Wearables */
-@import url('../../dist/mobile.css') 
+@import url('../../dist/watch.css') 
     (max-device-width: 368px) 
     and (max-device-height: 448px) 
     and (-webkit-device-pixel-ratio: 3)
@@ -48,7 +48,7 @@
 /*** 3. Kindle Fire ***/
 
 /* Tablets */
-@import url('../../dist/mobile.css') 
+@import url('../../dist/tablet.css') 
   (min-device-width: 720px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) 
@@ -87,7 +87,7 @@
 /*** Vertically mounted Retina & non-retina Screens ***/
 
 /* Desktops */ 
-@import url('../../dist/mobile.css') 
+@import url('../../dist/desktop.css') 
   (min-device-width: 720px) 
   and (max-device-height: 1920px) 
   and (-webkit-min-device-pixel-ratio: 1)
@@ -104,7 +104,7 @@
 
 /* Limited browser support. */
 /* Vertically mounted television or projector. */
-@import url('../../dist/mobile.css') 
+@import url('../../dist/television.css') 
   (min-device-width: 1440px) 
   and (max-device-width: 4320px) 
   and (hover: none) 

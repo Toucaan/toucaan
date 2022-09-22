@@ -1,16 +1,17 @@
-/* @import '../../accessibility/notch';  // Notch handling is not required on desktops. Delete this line or uncomment as necessary */
+// Notch handling isn't required on desktops. Uncomment only if necessary */
+/* @import '../../accessibility/notch';  */
 
 @media (min-aspect-ratio: 2 / 1) { /* Length : Breadth ratio > 2 */
   :root {
-    --edge: 100vmin; /* Always pick the shorter side for better control on scalability. */
-    --fs: calc(var(--edge) / 100);
+    --shorter-edge: 100vmin; /* Always pick the shorter side for better control on scalability. */
+    --fs: calc(var(--shorter-edge) / 100);
   }
 }
 
 @media (max-aspect-ratio: 2 / 1) { /* Length : Breadth ratio < 2 */
   :root {
-    --edge: 50vw;
-    --fs: calc(var(--edge) / 100);
+    --shorter-edge: 50vw;
+    --fs: calc(var(--shorter-edge) / 100);
   }
 }
 

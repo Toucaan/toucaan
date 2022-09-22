@@ -11,7 +11,7 @@
 /*** UNDERSTANDING THE FULL SCOPE OF THE ROUTER. ***/  
 
 /* Smartphones */
-@import url('../../dist/desktop.css') 
+@import url('../../dist/mobile.css') 
   (min-device-width: 480px) 
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
@@ -35,7 +35,7 @@
 /*** 3. Kindle Fire ***/
 
 /* Tablets */
-@import url('../../dist/desktop.css') 
+@import url('../../dist/tablet.css') 
   (min-device-width: 720px) 
   and (max-device-width: 1280px) 
   and (-webkit-min-device-pixel-ratio: 1) 
@@ -108,7 +108,7 @@ And use and (min-aspect-ratio: 16/9) for ultrawide desktops.
 /*** Route-in or @import television.css next. ***/
 
 /* Limited browser support. */
-@import url('../../dist/desktop.css') 
+@import url('../../dist/television.css') 
   (min-device-width: 2560px) 
   and (max-device-width: 7680px) 
   and (hover: none) 

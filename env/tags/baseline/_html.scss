@@ -4,10 +4,13 @@
 */
 
 html {
-	background-color: var(--lightest-grey);
+	background-color: var(--lightmode-primary-background-color);
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	overflow-x: hidden; /* Uncomment in case of "mobile app view" only if you need horizontal panning. Usually, further control using JavaScript might be required. */
+	-webkit-text-size-adjust: 100%;
+	-moz-tab-size: 4;
+	tab-size: 4;
+	overflow-x: hidden; /* Uncomment if "horizontal panning" is needed in mobile app view. Usually, further control using JavaScript might be required. */
 	overflow-y: scroll;
 	text-size-adjust: 100%;
 	scroll-snap-type: y mandatory;

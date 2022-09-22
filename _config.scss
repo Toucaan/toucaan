@@ -2,9 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap&text="RedGosithub"'); /* Use font-subsetting wherever it is possible */
 
+:root {
+	/* Do not remove or alter the following two lines.           */
+	/* Recommended reading: https://bubblin.io/blog/a-css-router */
+	--portrait-axis: /toucaan/router/portrait.css;
+	--landscape-axis: /toucaan/router/landscape.css;
+}
+
 /* Portrait ⇋ landscape switch. */
-@import url('/toucaan/router/portrait.css') screen and (orientation: portrait);
-@import url('/toucaan/router/landscape.css') screen and (orientation: landscape);
+@import url(var(--portrait-axis)) screen and (orientation: portrait);
+@import url(var(--landscape-axis)) screen and (orientation: landscape);
 
 /* --vmin stands for base unit of intrinsic blockscoped typography. */
 @media only screen and (orientation: portrait) {
@@ -32,24 +39,33 @@
 	--serif: -apple-system-ui-serif, ui-serif, "Apple Garamond", "Baskerville", "Times New Roman", "Droid Serif", "Times", "Source Serif Pro", serif;
 	
 	/* Set your custom font unto a variable over here, like so: */
-	
-	/* --custom-font: 'Inter Regular', sans-serif; */
+	--eina-one: 'Eina01 Regular', sans-serif; /* Example off Red Goose */
 
-	/****** THE COLOR PALETTE *******/
-	--primary-text-color: rgba(60, 74, 91, 0.99);
-	--primary-headings-color: rgba(60, 74, 91, 0.99);
-	
-	/* Set anchor color */
-	--primary-anchor-color: rgba(25, 95, 255, 0.99);
-	--primary-anchor-highlighted-color: rgba(50, 140, 255, 0.99);
-
-
+	/****** THE FULL COLOR PALETTE *******/
 	--white: rgba(255, 255, 255, 1);
 	--black: rgba(0, 0, 0, 0);	
 	
 	/* Implement color palette for your brand. { Check → /accessibility/_darkmode.scss as well. }. */
 	/* Recommended reading → Building Your Color Palette by Adam Wathan. https://www.refactoringui.com/previews/building-your-color-palette 	
 
+	--lightmode-primary-text-color: 
+	--lightmode-primary-headings-color: 
+	--lightmode-primary-background-color: 
+	
+	/* Set anchor color 
+	--lightmode-primary-anchor-color: rgba(25, 95, 255, 0.99);
+	--lightmode-primary-anchor-highlighted-color: rgba(50, 140, 255, 0.99);
+
+	
+	/* What this is → TODO: doc link here*/ /*
+	--lightmode-text-selection-color: 
+	--lightmode-background-selection-color: 
+
+	/* What this is → TODO: doc link here*/ /*
+	--lightmode-background-selection-window-inactive-color:
+	--lightmode-text-selection-window-inactive-color:
+
+	/* What this is → TODO: doc link here*/ /*
 	--lightest-grey:
 	--lighter-grey: 
 	--light-grey: 

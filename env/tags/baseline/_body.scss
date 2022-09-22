@@ -1,7 +1,7 @@
 body {
   font-size: var(--base-font-size); /* This is set at root for each device type separately. */
   // font-family: var(--system); /* Uncomment for backup display in case your custom font fails to load. */
-  font-family: var(--eina-one);
+  font-family: var(--eina-one); /* Example off Red Goose. */
   font-smooth: always;
   font-weight: 300;
   font-style: normal;
@@ -20,12 +20,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-osx-font-smoothing: antialiased;
 
-  line-height: 1.5; /* calc(1.5 * 4 * var(--fs)) === 1.5. Or you could space it out differently. */
+  line-height: 1.5; /* Or calc(1.5 * 4 * var(--fs)) === 1.5. Or you could line-height differently. */
 
   /* Colors */
-  color: var(--dark-grey);
+  color: var(--lightmode-primary-text-color);
   text-shadow: 1px 1px 1px var(--white);
-  background-color: var(--lightest-grey); /* Always set a color for the body and flip it in the dark mode */
+  background-color: var(--lightmode-primary-background-color); /* Always set a color for the body and flip it in the dark mode */
 
   /* Dimensions */
   border: none;

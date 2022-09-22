@@ -1,10 +1,14 @@
 /* Thematic breaks */
 
-hr.plain {
+hr {
   border: 0;
+  color: inherit;
   height: 1px;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1));
 }
+
+
+/* Extra stylish hr options below. */
 
 hr.and {
   border: 0;
