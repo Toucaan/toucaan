@@ -71,20 +71,24 @@
 
 @import '../../env/helpers/utilities';
 
-/***** App specific style below. ******/
+/**********************************************************/
+/***** App-Specific or User-Written Styles go below. ******/
+/**********************************************************/
 
-@import '../../palette/colors';
 
-/* Samples:
+/* Break you application style into components:
 
-@import './components/header';
+  Examples:
+    @import '../../palette/colors';
 
-@import './components/main';
+    @import './components/header';
 
-@import './components/footer';
+    @import './components/main';
 
-@import './components/hero';
+    @import './components/footer';
 
-@import './forms/login';
+    @import './components/hero';
 
-and so on… ****/
+    @import './forms/login';
+
+/**********************************************************/
