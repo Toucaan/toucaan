@@ -1,3 +1,69 @@
+/* Some random utility classes. DO NOT USE! */
+/* To be deleted in the next release. */
+
+.unpointable {
+	pointer-events: none;
+}
+
+.pointable {
+	pointer-events: auto;
+}
+
+.blur {
+	backdrop-filter: blur(calc(5 * var(--fs)));
+}
+
+.lean {
+	width: var(--lean);
+}
+
+.safe {
+	width: var(--safe);
+}
+
+.fold {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	-ms-overflow-style: none;
+	/* IE and Edge */
+	scrollbar-width: none;
+	/* Mozilla */
+	content-visibility: auto;
+}
+
+.full {
+	width: var(--full);
+}
+
+.one-half {
+	width: var(--one-half);
+}
+
+.one-third {
+	width: var(--one-third);
+}
+
+.two-third {
+	width: var(--two-third);
+}
+
+.maxzee {
+	z-index: 2147483647 !important;
+	/* 32bit max value of z-index. */
+	z-index: 1000000 !important;
+	/* Overiding the previous !important because experiments! */
+}
+
+.hidden {
+	display: none;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+
 /* Element Positioning */
 .left {
 	float: left;
@@ -78,24 +144,29 @@
 }
 
 .side-gap {
-	margin-right: calc(1 * var(--fs)); /* 20% of one line-height on either side */
+	margin-right: calc(1 * var(--fs));
+	/* 20% of one line-height on either side */
 	margin-left: calc(1 * var(--fs));
 }
 
 .top-gap {
-	margin-top: calc(4 * var(--fs)); /* One line-height */
+	margin-top: calc(4 * var(--fs));
+	/* One line-height */
 }
 
 .double-top-gap {
-	margin-top: calc(2 * 4 * var(--fs)); /* Two line-heights */
+	margin-top: calc(2 * 4 * var(--fs));
+	/* Two line-heights */
 }
 
 .bottom-gap {
-	margin-bottom: calc(4 * var(--fs)); /* One line-height */
+	margin-bottom: calc(4 * var(--fs));
+	/* One line-height */
 }
 
 .double-bottom-gap {
-	margin-bottom: calc(2 * 4 * var(--fs)); /* Two line-heights */
+	margin-bottom: calc(2 * 4 * var(--fs));
+	/* Two line-heights */
 }
 
 .pad {
@@ -119,61 +190,3 @@
 	transform: translate3d(0, 0, 0);
 }
 
-.unpointable {
-	pointer-events: none;
-}
-
-.pointable {
-	pointer-events: auto;
-}
-
-.blur {
-	backdrop-filter: blur(calc(5 * var(--fs)));
-}
-
-.lean {
-	width: var(--lean);
-}
-
-.safe {
-	width: var(--safe);
-}
-
-
-.fold {
-	height: 100vh;
-	width: 100vw;
-	overflow: hidden;
-	-ms-overflow-style: none; /* IE and Edge */
-	scrollbar-width: none; /* Mozilla */
-	content-visibility: auto;
-}
-
-.full {
-	width: var(--full);
-}
-
-.one-half {
-	width: var(--one-half);
-}
-
-.one-third {
-	width: var(--one-third);
-}
-
-.two-third {
-	width: var(--two-third);
-}
-
-.maxzee {
-	z-index: 2147483647 !important; /* 32bit max value of z-index. */
-  z-index: 1000000 !important; /* Overiding the previous !important because experiments! */
-}
-
-.hidden {
-	display: none;
-}
-
-.invisible {
-	visibility: hidden;
-}

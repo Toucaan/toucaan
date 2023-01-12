@@ -2,6 +2,7 @@
 
 /* Read more at https://bubblin.io/blog/toucaan-introduction */
 
+/* Start test of viewport squarishness */ 
 @media (min-aspect-ratio: 1 / 2) {
   :root {
     --edge: 100vmin; /* Choose the shorter side. */
@@ -15,6 +16,7 @@
     --fs: calc(2 * var(--edge) / 100);
   }
 }
+/* End test of viewport squarishness */ 
 
 // @media all and (display-mode: fullscreen) {
 //   :root {
