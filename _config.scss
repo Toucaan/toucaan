@@ -39,8 +39,9 @@
 	--serif: -apple-system-ui-serif, ui-serif, "Apple Garamond", "Baskerville", "Times New Roman", "Droid Serif", "Times", "Source Serif Pro", serif;
 	
 	/* Set your custom font unto a variable over here, like so: */
-	--eina-one: 'Eina01 Regular', sans-serif; /* Example off of Red Goose. See /typopgraphy/typset.scss */
+	--eina-one: 'Eina01 Regular', sans-serif; /* Examples off of Red Goose. See /typopgraphy/typset.scss */
 	--mark-pro-heavy: 'Mark Pro Medium', sans-serif;
+	
 	/****** THE FULL COLOR PALETTE *******/
 	--white: rgba(255, 255, 255, 1);
 	--black: rgba(0, 0, 0, 0);	

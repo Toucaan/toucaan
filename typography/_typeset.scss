@@ -9,7 +9,7 @@ h6 {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: var(--mark-pro-heavy);
+  font-family: var(--mark-pro-heavy); /* See _config.scss to change this variable. */
   font-weight: 800;
   display: flow-root;
 }
