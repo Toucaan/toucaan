@@ -1,4 +1,7 @@
-/* Thematic breaks */
+/* Put your reset here. */ 
+
+
+/* Example:
 
 hr {
   border: 0;
@@ -7,47 +10,10 @@ hr {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1));
 }
 
-
-/* Extra stylish hr options below. */
-
-hr.and {
-  border: 0;
-  text-align: center;
-  height: calc(1 * 1 * 4 * var(--fs)); /* Occupy one line total. */
-  width: 100%;
-  margin: calc(var(--fs)*6) auto;
-  box-shadow: none;
-  position: relative;
-}
-
-hr.and::before {
-  content: "";
-  border-bottom: 1px solid var(--white);
-  height: calc(0.5 * 1 * 4 * var(--fs)); /* Occupy one line total. */
-  width: 100%;
-  position: absolute;
-  left: 0;
-}
-
-hr.and::after {
-  content: "And";
-  font-size: calc(0.5 * 4 * var(--fs));
-  color: var(--violet);
-  border: 1px solid var(--white);
-  border-radius: 5px;
-  margin-top: 0;
-  position: absolute;
-  background-color: var(--white);
-  width: 100px;
-  left: calc((100% - 100px) / 2);
-  height: calc(1 * 1 * 4 * var(--fs));
-  line-height: calc(1 * 4 * var(--fs));
-}
-
 hr.dingbat {
   border: 0;
   text-align: center;
-  height: calc(1 * 1.5 * 4 * var(--fs)); /* Occupy one line total. */
+  height: calc(1 * 1.5 * 4 * var(--fs)); 
   margin: 0 auto;
   box-shadow: none;
 }
@@ -63,37 +29,4 @@ hr.dingbat::before {
   line-height: calc(1.5 * 4 * var(--fs));
 }
 
-hr.end {
-  border: 0;
-  text-align: center;
-  height: calc(1 * 1 * 4 * var(--fs)); /* Occupy one line total. */
-  width: 100%;
-  margin: 0 auto;
-  box-shadow: none;
-  position: relative;
-}
-
-hr.end::before {
-  content: "";
-  border-bottom: 1px solid var(--violet);
-  height: calc(0.5 * 1 * 4 * var(--fs)); /* Occupy one line total. */
-  width: 100%;
-  position: absolute;
-  left: 0;
-}
-
-hr.end::after {
-  content: "❧";
-  font-size: calc(0.8 * 4 * var(--fs));
-  color: var(--white);
-  border: 1px solid var(--violet);
-  border-radius: 5px;
-  margin-top: 0;
-  position: absolute;
-  background-color: var(--white);
-  width: 100px;
-  left: calc((100% - 100px) / 2);
-  height: calc(1 * 1 * 4 * var(--fs));
-  line-height: calc(0.9 * 4 * var(--fs));
-  box-shadow: inset 0px -1px 4px rgba(128, 102, 255, 0.3);
-}
+*/
