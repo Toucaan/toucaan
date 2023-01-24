@@ -2,18 +2,23 @@
 
 /* Read more at https://bubblin.io/blog/toucaan-introduction */
 
-/* Start test of viewport squarishness */ 
+/* Start test of viewport squarishness: 
+    → Test what is the largest possible size of a square that would fit into the viewport? 
+    → How many such "largest possible squares" can fit into the viewport without exceeding 100vmax?  
+*/ 
 @media (min-aspect-ratio: 1 / 2) {
   :root {
-    --edge: 100vmin; /* Choose the shorter side. */
-    --fs: calc(2 * var(--edge) / 100); /* fs stands for font size. */
+    --edge: 100vmin; /* Always start with the shortest viewport side. */
+    --basis: calc(var(--edge) / 100); /* 1 part of the square */
+    --fs: calc(2 * var(--basis)); /* fs stands for font size. */
   }
 }
 
 @media (max-aspect-ratio: 1 / 2) {
   :root {
-    --edge: 50vh; /* The shorter side, always. */
-    --fs: calc(2 * var(--edge) / 100);
+    --edge: 50vmax; /* The shorter side, always. */
+    --basis: calc(var(--edge) / 100); /* 1 part of the square */
+    --fs: calc(2 * var(--basis)); /* Factor 2 can be adjusted according to required font-size relative to the mobile viewport. */
   }
 }
 /* End test of viewport squarishness */ 
