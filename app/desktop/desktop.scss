@@ -4,7 +4,7 @@
 @media (min-aspect-ratio: 2 / 1) { /* Length : Breadth ratio > 2 */
   :root {
     --edge: 100vmin; /* Always pick the shorter side for better control on scalability. */
-    --basis: calc(--var(edge) / 100) 
+    --basis: calc(--var(edge) / 100); 
     --fs: calc(1 * var(--basis));
   }
 }
@@ -12,7 +12,7 @@
 @media (max-aspect-ratio: 2 / 1) { /* Length : Breadth ratio < 2 */
   :root {
     --edge: 50vmax;
-    --basis: calc(--var(edge) / 100)  
+    --basis: calc(--var(edge) / 100); 
     --fs: calc(1 * var(--basis));
   }
 }
