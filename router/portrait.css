@@ -2,15 +2,13 @@
 /* The portrait-axis router. */
 /* The file at --> ./toucaan/router/portrait.css */
 
+/*** DO NOT MAKE ANY CHANGES ON THIS FILE WITHOUT ***/
+/*** UNDERSTANDING THE SCOPE OF INTRINSIC DESIGN. ***/  
 
 /*** Route-in for @import watch.css ***/
 /*** a. Apple Watch 6 for men = 44mm. Resolution: 368 x 448 pixels ***/
 /*** b. Apple Watch 6 for women = 40mm.  324 x 394 pixels   ***/
 /*** c. Moto 360 Watch = 46mm. Resolution: 360 x 330 pixels ***/
-
-/*** DO NOT MAKE ANY CHANGES ON THIS FILE WITHOUT ***/
-/*** UNDERSTANDING THE SCOPE OF INTRINSIC DESIGN. ***/  
-
 /* Wearables */
 @import url('../../dist/watch.css') 
     (max-device-width: 368px) 
