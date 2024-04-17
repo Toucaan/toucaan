@@ -1,3 +1,6 @@
+body {
+  background-color: red;
+}
 /* ** Landscape or y-axis.  ***/
 /* The landscape-axis router. */
 /* The file at --> ./toucaan/router/landscape.css */

@@ -1,17 +1,24 @@
-// /* Example taken from the Red Goose website. */ 
-// @font-face {
-// font-family: 'Eina01 Regular';
-// src: url('./../../../fonts/Eina01-Regular.eot'); /* IE9 Compat Modes */
-// src:  url('./../../../fonts/Eina01-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-//       url('./../../../fonts/Eina01-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-//       url('./../../../fonts/Eina01-Regular.ttf')  format('truetype');
-//   }
+/* Example taken from the Red Goose website. */
+@font-face {
+  font-family: 'Eina01 Regular';
+  src: url('./../../../fonts/Eina01-Regular.eot');
+  /* IE9 Compat Modes */
+  src: url('./../../../fonts/Eina01-Regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('./../../../fonts/Eina01-Regular.woff') format('woff'),
+    /* Pretty Modern Browsers */
+    url('./../../../fonts/Eina01-Regular.ttf') format('truetype');
+}
 
-// @font-face {
-//   font-family: 'Mark Pro Heavy';
-//   src: url('./../../../fonts/Mark-Pro-Heavy.eot'); /* IE9 Compat Modes */
-//   src:  url('./../../../fonts/Mark-Pro-Heavy.woff2') format('woff2'), /* Super Modern Browsers */
-//         url('./../../../fonts/Mark-Pro-Heavy.woff') format('woff'), /* Pretty Modern Browsers */
-//         url('./../../../fonts/Mark-Pro-Heavy.ttf')  format('truetype');
-//   }
-    
+@font-face {
+  font-family: 'Mark Pro Heavy';
+  src: url('./../../../fonts/Mark-Pro-Heavy.eot');
+  /* IE9 Compat Modes */
+  src: url('./../../../fonts/Mark-Pro-Heavy.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('./../../../fonts/Mark-Pro-Heavy.woff') format('woff'),
+    /* Pretty Modern Browsers */
+    url('./../../../fonts/Mark-Pro-Heavy.ttf') format('truetype');
+}
+
+
