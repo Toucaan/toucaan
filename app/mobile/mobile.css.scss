@@ -1,109 +1,109 @@
 @import '../../accessibility/notch';
 
-/* Read more at https://bubblin.io/blog/toucaan-introduction */
+// /* Read more at https://bubblin.io/blog/toucaan-introduction */
 
-/* Start test of viewport squarishness: 
-    → Test what is the largest possible size of a square that would fit into the viewport? 
-    → How many such "largest possible squares" can fit into the viewport without exceeding 100vmax?  
-*/ 
-@media (min-aspect-ratio: 1 / 2) {
-  :root {
-    --edge: 100vmin; /* Always start with the shortest viewport side. */
-    --basis: calc(var(--edge) / 100); /* 1 part of the square */
-    --fs: calc(2 * var(--basis)); /* fs stands for font size. */
-  }
-}
-
-@media (max-aspect-ratio: 1 / 2) {
-  :root {
-    --edge: 50vmax; /* The shorter side, always. */
-    --basis: calc(var(--edge) / 100); /* 1 part of the square */
-    --fs: calc(2 * var(--basis)); /* Factor 2 can be adjusted according to required font-size relative to the mobile viewport. */
-  }
-}
-/* End test of viewport squarishness */ 
-
-// @media all and (display-mode: fullscreen) {
+// /* Start test of viewport squarishness: 
+//     → Test what is the largest possible size of a square that would fit into the viewport? 
+//     → How many such "largest possible squares" can fit into the viewport without exceeding 100vmax?  
+// */ 
+// @media (min-aspect-ratio: 1 / 2) {
 //   :root {
-//          /* Display controls to exit fullscreen mode. */
-//          /* See documentation to learn more options. */
+//     --edge: 100vmin; /* Always start with the shortest viewport side. */
+//     --basis: calc(var(--edge) / 100); /* 1 part of the square */
+//     --fs: calc(2 * var(--basis)); /* fs stands for font size. */
 //   }
 // }
 
-:root {
-  /* Treat larger widths in portrait mode as landscape with more room for the scroll. */
-  --lean: calc(95 * var(--vmin)); /* 100vmin i.e portrait width or full height in landscape orientation. */
-  --safe: var(--lean);
-  --full: 100vmin;
-  --half: 100vmin;
-  // --one-half: calc(1 / 2 * 100vmin);
-  // --one-third: calc(1 / 3 * 100vmin);
-  // --two-third: calc(2 / 3 * 100vmin);
-  --one-half: var(--lean); /* Since mobile devices are lean anyway. */
-  --one-third: var(--lean); /* …will be different in case of tablets. */
-  --two-third: var(--lean);
+// @media (max-aspect-ratio: 1 / 2) {
+//   :root {
+//     --edge: 50vmax; /* The shorter side, always. */
+//     --basis: calc(var(--edge) / 100); /* 1 part of the square */
+//     --fs: calc(2 * var(--basis)); /* Factor 2 can be adjusted according to required font-size relative to the mobile viewport. */
+//   }
+// }
+// /* End test of viewport squarishness */ 
 
-  --base-font-size-for-mobile: calc(4 * var(--fs)); 
-  --base-font-size: var(--base-font-size-for-mobile); /* This variable is declared for each device category separately. */
-}
+// // @media all and (display-mode: fullscreen) {
+// //   :root {
+// //          /* Display controls to exit fullscreen mode. */
+// //          /* See documentation to learn more options. */
+// //   }
+// // }
 
-/* Read more at https://bubblin.io/blog/toucaan-introduction */
+// :root {
+//   /* Treat larger widths in portrait mode as landscape with more room for the scroll. */
+//   --lean: calc(95 * var(--vmin)); /* 100vmin i.e portrait width or full height in landscape orientation. */
+//   --safe: var(--lean);
+//   --full: 100vmin;
+//   --half: 100vmin;
+//   // --one-half: calc(1 / 2 * 100vmin);
+//   // --one-third: calc(1 / 3 * 100vmin);
+//   // --two-third: calc(2 / 3 * 100vmin);
+//   --one-half: var(--lean); /* Since mobile devices are lean anyway. */
+//   --one-third: var(--lean); /* …will be different in case of tablets. */
+//   --two-third: var(--lean);
 
-@import '../../typography/typefaces';
+//   --base-font-size-for-mobile: calc(4 * var(--fs)); 
+//   --base-font-size: var(--base-font-size-for-mobile); /* This variable is declared for each device category separately. */
+// }
 
-@import '../../typography/typography';
+// /* Read more at https://bubblin.io/blog/toucaan-introduction */
 
-@import '../../typography/typeset';
+// @import '../../typography/typefaces';
 
-@import '../../env/helpers/universal';
+// @import '../../typography/typography';
 
-/* Set up a baseline environment. */
-@import '../../env/tags/baseline/html';
+// @import '../../typography/typeset';
 
-@import '../../env/tags/baseline/body';
+// @import '../../env/helpers/universal';
 
-@import '../../env/tags/baseline/anchor';
+// /* Set up a baseline environment. */
+// @import '../../env/tags/baseline/html';
 
-/* 
-@import '../../env/tags/lists';
+// @import '../../env/tags/baseline/body';
 
-@import '../../env/tags/pre';
+// @import '../../env/tags/baseline/anchor';
 
-@import '../../env/tags/hr';
+// /* 
+// @import '../../env/tags/lists';
 
-@import '../../env/tags/blockquote';
+// @import '../../env/tags/pre';
 
-@import '../../env/tags/sup';
+// @import '../../env/tags/hr';
 
-and so on… */
+// @import '../../env/tags/blockquote';
 
-/* Environment helpers & utilities. */
+// @import '../../env/tags/sup';
 
-@import '../../env/helpers/pseudos';
+// and so on… */
 
-@import '../../env/helpers/group';
+// /* Environment helpers & utilities. */
 
-@import '../../env/helpers/utilities';
+// @import '../../env/helpers/pseudos';
+
+// @import '../../env/helpers/group';
+
+// @import '../../env/helpers/utilities';
 
 
-/**********************************************************/
-/***** App-Specific or User-Written Styles go below. ******/
-/**********************************************************/
+// /**********************************************************/
+// /***** App-Specific or User-Written Styles go below. ******/
+// /**********************************************************/
 
 
-/* Break you application style into components:
+// /* Break you application style into components:
 
-  Examples:
-    @import '../../palette/colors';
+//   Examples:
+//     @import '../../palette/colors';
 
-    @import './components/header';
+//     @import './components/header';
 
-    @import './components/main';
+//     @import './components/main';
 
-    @import './components/footer';
+//     @import './components/footer';
 
-    @import './components/hero';
+//     @import './components/hero';
 
-    @import './forms/login';
+//     @import './forms/login';
 
-/**********************************************************/
+// /**********************************************************/

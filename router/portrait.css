@@ -10,7 +10,7 @@
 /*** b. Apple Watch 6 for women = 40mm.  324 x 394 pixels   ***/
 /*** c. Moto 360 Watch = 46mm. Resolution: 360 x 330 pixels ***/
 /* Wearables */
-@import url('../../dist/watch.css') 
+@import url('../app/watch/watch.css') 
     (max-device-width: 368px) 
     and (max-device-height: 448px) 
     and (-webkit-device-pixel-ratio: 3)
@@ -23,7 +23,7 @@
 /*** 2. Android phones including Galaxy Fold @280px ***/
 
 /* Smartphones */
-@import url('../../dist/mobile.css') 
+@import url('../app/mobile/mobile.css') 
   (min-device-width: 280px) 
   and (max-device-width: 540px)
   and (-webkit-min-device-pixel-ratio: 2)
@@ -46,7 +46,7 @@
 /*** 3. Kindle Fire ***/
 
 /* Tablets */
-@import url('../../dist/tablet.css') 
+@import url('../app/tablet/tablet.css') 
   (min-device-width: 720px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) 
@@ -73,7 +73,7 @@
 /*** Older Tesla Model S and a few other EVs ***/
 
 /* EVs */
-/* @import url('../../dist/vehicle.css') 
+/* @import url('../app//vehicle.css') 
   (min-device-width: 1200px) 
   and (max-device-width: 1920px) 
   and (-webkit-min-device-pixel-ratio: 1) 
@@ -85,7 +85,7 @@
 /*** Vertically mounted Retina & non-retina Screens ***/
 
 /* Desktops */ 
-@import url('../../dist/desktop.css') 
+@import url('../app/desktop/desktop.css') 
   (min-device-width: 720px) 
   and (max-device-height: 1920px) 
   and (-webkit-min-device-pixel-ratio: 1)
@@ -102,7 +102,7 @@
 
 /* Limited browser support. */
 /* Vertically mounted television or projector. */
-@import url('../../dist/television.css') 
+@import url('../app/television/television.css') 
   (min-device-width: 1440px) 
   and (max-device-width: 4320px) 
   and (hover: none) 

@@ -1,6 +1,3 @@
-body {
-  background-color: red;
-}
 /* ** Landscape or y-axis.  ***/
 /* The landscape-axis router. */
 /* The file at --> ./toucaan/router/landscape.css */
@@ -14,7 +11,7 @@ body {
 /*** UNDERSTANDING THE FULL SCOPE OF THE ROUTER. ***/  
 
 /* Smartphones */
-@import url('../../dist/mobile.css') 
+@import url('../app/mobile/mobile.css') 
   (min-device-width: 480px) 
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
@@ -38,7 +35,7 @@ body {
 /*** 3. Kindle Fire ***/
 
 /* Tablets */
-@import url('../../dist/tablet.css') 
+@import url('../app/tablet/tablet.css') 
   (min-device-width: 720px) 
   and (max-device-width: 1280px) 
   and (-webkit-min-device-pixel-ratio: 1) 
@@ -65,7 +62,7 @@ body {
 /*** Older Tesla Model S and a few other EVs ***/
 
 /* EVs */
-/* @import url('../../dist/vehicle.css') 
+/* @import url('../app/vehicle.css') 
   (min-device-width: 1200px) 
   and (max-device-width: 1920px) 
   and (-webkit-min-device-pixel-ratio: 1) 
@@ -77,7 +74,7 @@ body {
 /*** Retina & non-retina Screens ***/
 
 /* Desktops */ 
-@import url('../../dist/desktop.css') 
+@import url('../app/desktop/desktop.css') 
   (min-device-width: 1080px) 
   and (max-device-width: 3840px) 
   and (-webkit-min-device-pixel-ratio: 1)
@@ -111,7 +108,7 @@ And use and (min-aspect-ratio: 16/9) for ultrawide desktops.
 /*** Route-in or @import television.css next. ***/
 
 /* Limited browser support. */
-@import url('../../dist/television.css') 
+@import url('../app/television/television.css') 
   (min-device-width: 2560px) 
   and (max-device-width: 7680px) 
   and (hover: none) 

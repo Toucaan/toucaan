@@ -37,7 +37,7 @@
   --two-third: calc(2 / 3 * 100%);
   
   --base-font-size-for-desktop: calc(4 * var(--fs)); 
-  --base-font-size: var(--base-font-size-for-desktop); /* This variable is declared for each device category separately. 
+  --base-font-size: var(--base-font-size-for-desktop); /* This variable is declared for each device category separately. */
 }
 
 /* Custom typesetting at the earliest opportunity. */
@@ -57,8 +57,6 @@
 @import '../../env/tags/baseline/anchor';
 
 /* Add more tags to your environment depending on your app's needs: */
-@import '../../env/tags/div';
-
 @import '../../env/tags/hr';
 
 // @import '../../env/tags/blockquote';
@@ -71,7 +69,7 @@
 
 @import '../../env/helpers/group';
 
-@import '../../env/helpers/utilities';
+@import '../../env/helpers/universal';
 
 /**********************************************************/
 /***** App-Specific or User-Written Styles go below. ******/
@@ -94,3 +92,5 @@
     @import './forms/login';
 
 /**********************************************************/
+
+@import './layout/layout'
