@@ -21,7 +21,7 @@
       },
       "repositoryUrl": {
         "url": "https://github.com/Toucaan/toucaan-research",
-        "wellKnown": "https://github.com/Toucaan/toucaan-research/.well-known/funding-manifest-urls"
+        "wellKnown": ""
       },
       "licenses": [
         "spdx:MIT"
