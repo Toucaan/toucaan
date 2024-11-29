@@ -20,8 +20,8 @@
           "url": "https://toucaan.com"
       },
       "repositoryUrl": {
-          "url": "https://github.com/Toucaan/toucaan",
-          "wellKnown": "https://github.com/example/zombo-app/blob/main/.well-known/funding-manifest-urls"
+          "url": "https://github.com/Toucaan/toucaan-research",
+          "wellKnown": "https://github.com/Toucaan/toucaan-research/.well-known/funding-manifest-urls"
       },
       "licenses": ["spdx:MIT"],
       "tags": ["intrinsic-web-design", "css", "user-experience", "accessibility", "developer-tools"]
@@ -37,8 +37,8 @@
           {
               "guid": "Github",
               "type": "payment-provider",
-              "address": "https://example.com/payme/@myid",
-              "description": "Pay with your debit/credit card through this gateway and setup recurring subscriptions."
+              "address": "https://github.com/marvindanig",
+              "description": "Setup recurring donations at https://github.com/sponsors/marvindanig. Please e-mail me for details."
           }
       ],
       "plans": [
@@ -47,7 +47,7 @@
               "status": "active",
               "name": "Hosting support",
               "description": "This will cover the monthly server hosting costs for the projects.",
-              "amount": 250,
+              "amount": 100,
               "currency": "USD",
               "frequency": "monthly",
               "channels": ["Mercury"]
@@ -74,7 +74,7 @@
           }
       ],
       "history": [
-          {"year": 2024, "income": 0, "expenses": 0, "taxes": 0, "currency": "USD", "description": "I don't understand the expectation here."}
+          {"year": 2024, "income": 0, "expenses": 600, "taxes": 0, "currency": "USD", "description": "I don't fully understand the expectation here."}
       ]
   }
 }
