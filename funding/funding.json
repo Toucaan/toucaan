@@ -6,7 +6,7 @@
     "name": "Toucaan—Intrinsic Web Design Framework",
     "email": "marvindanig@gmail.com",
     "phone": "+14159907903",
-    "description": "I'm a backend developer who is interested in modern frontend technologies. For the past two years, I've been consumed by the world of CSS, its inner workings, its long-held assumptions that no longer hold true, and the limitations of responsive web design itself.\n\n I believe that the design systems today are pinned to an outdated philosophy from the past, and we're at the precipice of a new design ideology that offers better, simpler, and more maintainable option.\n\n The latest standards and accessibility features, plus a wider support across vendors make it imperative to explore our CSS tooling ground-up. I want to be able to devote a 100% of my time on Intrinsic Web Design and Toucaan for the next twelve months.\n\nPS: Personally, I like the resilience aspect of FOSS the most and despite the rise of LLMs & GPTs, I prefer writing code with my bare hands.:-P",
+    "description": "I'm a backend developer who is interested in modern frontend technologies. For the past two years, I've been consumed by the world of CSS, its inner workings, its long-held assumptions that no longer hold true, and the limitations of responsive web design itself.\n\nI believe that the design systems today are pinned to an outdated philosophy from the past, and we're at the precipice of a new design ideology that offers better, simpler, and more maintainable options.\n\nThe latest standards and accessibility features, plus wider support across vendors, make it imperative to explore our CSS tooling ground-up. I want to be able to devote 100% of my time to Intrinsic Web Design and Toucaan for the next twelve months.\n\nPS: Personally, I like the resilience aspect of FOSS the most, and despite the rise of LLMs & GPTs, I prefer writing code with my bare hands. :-P",
     "webpageUrl": {
       "url": "https://github.com/Toucaan"
     }
@@ -15,12 +15,13 @@
     {
       "guid": "toucaan",
       "name": "Toucaan",
-      "description": "Toucaan is a stack-agnostic vanilla styling (CSS) framework for modern web applications.\n\n It is an implementation of a new design philosophy called Intrinsic Web Design.",
+      "description": "Toucaan is a stack-agnostic vanilla styling (CSS) framework for modern web applications.\n\nIt is an implementation of a new design philosophy called Intrinsic Web Design.",
       "webpageUrl": {
         "url": "https://github.com/Toucaan"
       },
       "repositoryUrl": {
-        "url": "https://github.com/Toucaan/toucaan-research/funding/funding.json"
+        "url": "https://github.com/Toucaan/toucaan-research",
+        "wellKnown": "https://github.com/Toucaan/toucaan-research/.well-known/funding-manifest-urls"
       },
       "licenses": [
         "spdx:MIT"
@@ -40,13 +41,13 @@
         "guid": "mercury",
         "type": "bank",
         "address": "6000 Poplar Ave, Suite 300, Memphis, TN 38119",
-        "description": "Will accept direct bank transfers. Please e-mail me for details."
+        "description": "Will accept direct bank transfers. Please email me for details."
       },
       {
         "guid": "github",
         "type": "payment-provider",
         "address": "https://github.com/marvindanig",
-        "description": "Setup recurring donations at https://github.com/sponsors/marvindanig. Please e-mail me for details."
+        "description": "Setup recurring donations at https://github.com/sponsors/marvindanig. Please email me for details."
       }
     ],
     "plans": [
@@ -77,7 +78,7 @@
       {
         "guid": "developer-evangelism",
         "status": "active",
-        "name": "Evangelism Expenses",
+        "name": "Evangelism expenses",
         "description": "This will cover the cost of one evangelist working part-time spreading the word and creating case studies.",
         "amount": 2000,
         "currency": "USD",
